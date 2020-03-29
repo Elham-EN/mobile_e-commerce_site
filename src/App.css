@@ -1,38 +1,36 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Hammersmith+One&display=swap');
+
+/*CSS Custom Variable Root*/
+:root {
+  --mainBlue: #121AB5;
+  --lightBlue: #009ffd;
+  --mainWhite: #f3f3f3;
+  --mainDark: #232528;
+  --mainYellow: #ffaa00;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Fira Sans', sans-serif !important;
+  background: var(--mainWhite);
+  color: var(--mainDark) !important;
+} 
+
+.text-title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif ;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text-blue {
+  color: var(--mainBlue);
+  font-family: Verdana, Geneva, Tahoma, sans-serif ;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.text-bright {
+  color: var(--lightBlue);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cart-icon {
+  cursor: pointer; font-size: 1.2rem; color: var(--mainYellow);
 }
